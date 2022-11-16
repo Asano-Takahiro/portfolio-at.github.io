@@ -1,0 +1,338 @@
+<!--  doctype宣言は、htmlのバージョンを記載するタグ。
+		単にhtmlとだけ記載の場合は、「html5」を指す -->
+<!doctype html>
+<!-- htmlタグは、doctype宣言の直後に記入 -->
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Word Cafe ,</title>
+		<meta name="description" content="書籍とカフェが共存する空間">
+		<!-- モバイル端末向け＝ビューポート
+	小さな画面に収まるように縮小表示する機能をオフにする -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico">
+   		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- 自作JavaScript-->
+		<script src="js/main.js"></script>
+		
+</head>
+<body>
+	<!-- ヘッダー -->
+	<header class="header">
+		<h1 class="logo">
+			<a href="#">
+				Word Cafe ,
+				<!-- 
+				ロゴ画像挿入
+				<img src="images/logo.svg" alt="Word Cafe ,">
+				 -->
+			</a>
+		</h1>
+		<!-- ハンバーガーメニュー開閉用のボタン -->
+		<div class="line">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+		<!-- ハンバーガーメニュー -->
+		<div id="content">
+				<!-- 
+				ハンバーガーメニュー
+				文字を中央寄せ
+				メニューの文字色 #f5f5f5
+				font-size: 24px
+				
+				jQuery
+				ページ内リンク
+				 -->
+				 <!-- ロゴ画像挿入 -->
+				<!-- ロゴ画像 w:272 h:56 -->
+				<!-- 
+				<img src="images/logo.svg" alt="Word Cafe ,">
+			<p>
+				Word Cafe ,
+				
+			</p>
+				 -->
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html#news">NEWS</a></li>
+					<li><a href="index.html#event">EVENT</a></li>
+					<li><a href="#menu">MENU</a></li>
+					<li><a href="#access">ACCESS</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="main">
+		<!-- メインビジュアル（縦書きテキスト） -->
+		<div class="mainvisual">
+			<div class="plaid">
+				<div class="vertical">
+					<p>縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト縦書きテスト</p>
+				</div>
+			</div>
+		</div>
+		<!-- NEWS お知らせ -->
+		<section id="news" class="wrapper">
+			<h2 class="section-title">NEWS</h2>
+			<!-- 
+			1 箇条書き
+			1-1 下線で仕切り棒
+			
+			 -->
+			<dl>
+				<dt>2022.10.26</dt>
+				<dd><span class="genre">展示</span><a href="#">イベント名イベント名イベント名</a></dd>
+				<dt>2022.10.26</dt>
+				<dd><span class="genre">展示</span><a href="#">イベント名イベント名イベント名</a></dd>
+				<dt>2022.10.26</dt>
+				<dd><span class="genre">展示</span><a href="#">イベント名イベント名イベント名</a></dd>
+				<dt>2022.10.26</dt>
+				<dd><span class="genre">展示</span><a href="#">イベント名イベント名イベント名</a></dd>
+				<dt>2022.9.28</dt>
+				<dd><span class="genre">お休み</span><a href="#">10月の休業日のお知らせ</a></dd>
+			</dl>
+			<div class="and-more">
+				<a href="news.html">and more</a>
+			</div>
+		</section>
+		<!-- 書籍展示イベント -->
+		<!-- 
+			2 		イベント画像挿入
+			2−1	画像とテキストの横並び（flex）
+			2−2	テキスト左揃え
+			2−3	角を丸くする
+			2−4	背景色を少し明るい黒色にする
+			
+			 -->
+		<section id="event" class="wrapper">
+			<h2 class="section-title">EVENT</h2>
+			
+			<div class="event-box event1">
+				<!-- イベント画像 w:240 h:320 -->
+				<img src="images/event01.jpg" alt="event1">
+				<div class="text-area">
+					<h3 class="event-title">タイトルタイトル</h3>
+					<dl class="auctor">
+						<dt>著者名 &#058;</dt>
+						<dd>テキストテキストテキスト</dd>
+					</dl>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<dl class="datetime-list">
+						<dt><span class="period">会期</span>&#058;</dt>
+						<dd>
+							<time datetime="2022-10-24">2022年10月24日(月)</time>
+							 &#12316; 
+							 <time datetime="2022-11-22">2022年11月22日(月)</time>
+						</dd>
+						<dt>開催時間 &#058;</dt>
+						<dd>
+							<time datetime="11:00">11 &#058; 00</time>
+							 &#12316; 
+							 <time datetime="19:00">11 &#058; 00</time>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="event-box event2">
+				<img src="images/event02.jpg" alt="event1">
+				<div class="text-area">
+					<h3 class="event-title">タイトルタイトル</h3>
+					<dl class="auctor">
+						<dt>著者名 &#058;</dt>
+						<dd>テキストテキストテキスト</dd>
+					</dl>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<dl class="datetime-list">
+						<dt><span class="period">会期</span>&#058;</dt>
+						<dd>
+							<time datetime="2022-10-24">2022年10月24日(月)</time>
+							 &#12316; 
+							 <time datetime="2022-11-22">2022年11月22日(月)</time>
+						</dd>
+						<dt>開催時間 &#058;</dt>
+						<dd>
+							<time datetime="11:00">11 &#058; 00</time>
+							 &#12316; 
+							 <time datetime="19:00">11 &#058; 00</time>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="and-more">
+				<a href="past-events.html">過去のイベント一覧</a>
+			</div>
+		</section>
+		
+		<!-- MENU -->
+		<!-- 
+			3 		メニュー画像挿入
+			3−1	画像とテキストの横並び（flex）
+			3−2	テキスト左揃え
+			3−3	フード、ドリンク、デザート、その他の仕切り線追加
+			3−4	メニュー名　価格の間に横線追加（画面幅によって線の幅を可変）
+			
+			 -->
+		<section id="menu" class="wrapper">
+			<h2 class="section-title">MENU</h2>
+			
+			<ul class="menu-category">
+				<li>
+					<div class="menu-category-title">
+						<!-- メニュー画像 w:136 h:136 -->
+						<img src="images/omelette-rice.png" alt="オムライスの写真">
+						<h3>
+						<span class="eng">Food</span>
+						<span class="ja">お食事</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">オムライス</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="menu-category-title">
+						<img src="images/coffee.png" alt="コーヒーの写真">
+						<h3>
+						<span class="eng">Drink</span>
+						<span class="ja">お飲み物</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="menu-category-title">
+						<img src="images/milk-crepe.png" alt="ケーキの写真">
+						<h3>
+						<span class="eng">Dessert</span>
+						<span class="ja">お菓子</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="menu-category-title">
+						<img src="images/photo-camera.png" alt="チェキの写真">
+						<h3>
+						<span class="eng">Other</span>
+						<span class="ja">その他</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+						<dt>
+							<span class="menu-title">メニュー名</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+					</dl>
+				</li>
+			</ul>
+		</section>
+		<!-- ACCESS  地図 店舗情報 -->
+		<!-- 
+			5 		地図画像挿入
+			5−1	地図画像とテキストの横並び（flex）
+			5−2	テキスト左揃え
+			5−3	店名・住所・電話番号の行間を開ける
+			5−4	電話番号・営業時間・定休日の文字を均等割付け
+			
+			 -->
+	</main>
+	<footer class="footer">
+		<section id="access">
+			<h2 class="section-title">ACCESS</h2>
+			
+			<div class="content-area wrapper">
+				<!-- イベント画像 w:240 h:240 -->
+				<img class="map" src="images/sample01.png" alt="Word Cafe , までの地図">
+				<div class="text-area">
+					<ul>
+						<li class="store-name">Word Cafe ,</li>
+						<li>&#12306;XXX-XXXX</li>
+						<li>東京都千代田区XXXXXXXX</li>
+						<li>XXXXXビル3F</li>
+					</ul>
+					<dl>
+						<dt>電話番号</dt>
+						<dd>&#058; XX-XXXX-XXXX</dd>
+						<dt>営業時間</dt>
+						<dd>
+							&#058; 
+							<time datetime="11:00">11 &#058; 00</time>
+							 &#12316; 
+							 <time datetime="21:00">21 &#058; 00</time>
+						</dd>
+						<dt class="day-off">定休日</dt>
+						<dd>&#058; 不定休</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+		<p class="copyright"><span class="copy">&copy;</span> Word Cafe ,</p>
+	</footer>
+</body>
+</html>
