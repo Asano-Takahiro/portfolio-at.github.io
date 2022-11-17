@@ -1,0 +1,159 @@
+<!--  doctype宣言は、htmlのバージョンを記載するタグ。
+		単にhtmlとだけ記載の場合は、「html5」を指す -->
+<!doctype html>
+<!-- htmlタグは、doctype宣言の直後に記入 -->
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Word Cafe ,</title>
+		<meta name="description" content="書籍とカフェが共存する空間">
+		<!-- モバイル端末向け＝ビューポート
+	小さな画面に収まるように縮小表示する機能をオフにする -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico">
+   		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- 自作JavaScript-->
+		<script src="js/main.js"></script>
+		
+</head>
+<body>
+	<!-- ヘッダー -->
+	<header class="header">
+		<h1 class="logo">
+			<a href="#">
+				Word Cafe ,
+				<!-- 
+				ロゴ画像挿入
+				<img src="images/logo.svg" alt="Word Cafe ,">
+				 -->
+			</a>
+		</h1>
+		<!-- ハンバーガーメニュー開閉用のボタン -->
+		<div class="line">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+		<!-- ハンバーガーメニュー -->
+		<div id="content">
+				<!-- 
+				ハンバーガーメニュー
+				文字を中央寄せ
+				メニューの文字色 #f5f5f5
+				font-size: 24px
+				
+				jQuery
+				ページ内リンク
+				 -->
+				 <!-- ロゴ画像挿入 -->
+				<!-- ロゴ画像 w:272 h:56 -->
+				<!-- 
+				<img src="images/logo.svg" alt="Word Cafe ,">
+			<p>
+				Word Cafe ,
+				
+			</p>
+				 -->
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="index.html#news">NEWS</a></li>
+					<li><a href="index.html#event">EVENT</a></li>
+					<li><a href="index.html#menu">MENU</a></li>
+					<li><a href="index.html#access">ACCESS</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="main">
+
+		<!-- NEWS お知らせ -->
+		<section id="news" class="wrapper">
+			<h2 class="section-title">NEWS</h2>
+			<!-- 
+			1 箇条書き
+			1-1 下線で仕切り棒
+			
+			 -->
+			<dl class="news-log">
+				<dt id="news01">
+					<time datetime="2022-10-26">2022.10.26</time>
+					<span class="news-title">イベント名イベント名イベント名</span>
+					<span class="genre">展示</span>
+				</dt>
+				<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+				<dt id="news02">
+					<time datetime="2022-10-26">2022.10.26</time>
+					<span class="news-title">イベント名イベント名イベント名</span>
+					<span class="genre">展示</span>
+				</dt>
+				<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+				<dt id="news03">
+					<time datetime="2022-10-26">2022.10.26</time>
+					<span class="news-title">イベント名イベント名イベント名</span>
+					<span class="genre">展示</span>
+				</dt>
+				<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+				<dt id="news04">
+					<time datetime="2022-10-26">2022.10.26</time>
+					<span class="news-title">イベント名イベント名イベント名</span>
+					<span class="genre">展示</span>
+				</dt>
+				<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+				<dt id="news05">
+					<time datetime="2022-9-28">2022.9.28</time>
+					<span class="news-title">10月の休業日のお知らせ</span>
+					<span class="genre">お休み</span>
+				
+				</dt>
+				<dd>
+					<ul>
+						<li>
+							<time datetime="2022-9-28">2022.9.XX(月)</time>
+						</li>
+						<li>
+							<time datetime="2022-9-28">2022.9.XX(月)</time>
+						</li>
+						<li>
+							<time datetime="2022-9-28">2022.9.XX(月)</time>
+						</li>
+						<li>
+							<time datetime="2022-9-28">2022.9.XX(月)</time>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			
+			<div class="pagenation">
+			<span>1</span>
+			<span><a href="news.html">2</a></span>
+			<span><a href="news.html">3</a></span>
+			<span><a href="news.html">4</a></span>
+			<span><a href="news.html">5</a></span>
+			<span>&hellip;&hellip;</span>
+			<span><a href="news.html">10</a></span>
+			</div>
+		</section>
+
+
+		<!-- ACCESS  地図 店舗情報 -->
+		<!-- 
+			5 		地図画像挿入
+			5−1	地図画像とテキストの横並び（flex）
+			5−2	テキスト左揃え
+			5−3	店名・住所・電話番号の行間を開ける
+			5−4	電話番号・営業時間・定休日の文字を均等割付け
+			
+			 -->
+	</main>
+	<footer class="footer">
+		<p class="copyright"><span class="copy">&copy;</span> Word Cafe ,</p>
+	</footer>
+</body>
+</html>
