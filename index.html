@@ -1,0 +1,370 @@
+<!--  doctype宣言は、htmlのバージョンを記載するタグ。
+		単にhtmlとだけ記載の場合は、「html5」を指す -->
+<!doctype html>
+<!-- htmlタグは、doctype宣言の直後に記入 -->
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Word Cafe ,</title>
+		<meta name="description" content="書籍とカフェが共存する空間">
+		<!-- モバイル端末向け＝ビューポート
+	小さな画面に収まるように縮小表示する機能をオフにする -->
+			<!-- 
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	  -->
+		<meta name="viewport" content="width=1024">
+		<link rel="shortcut icon" href="images/favicon.ico">
+   		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- 自作JavaScript-->
+		<script src="js/main.js"></script>
+		
+</head>
+<body>
+	<!-- ヘッダー -->
+	<header class="header">
+	<div class="header-wrapper">
+		<h1 class="logo">
+			<a href="#">
+				Word Cafe ,
+				<!-- 
+				ロゴ画像挿入
+				<img src="images/logo.svg" alt="Word Cafe ,">
+				 -->
+			</a>
+		</h1>
+		<!-- ハンバーガーメニュー開閉用のボタン -->
+		<div class="line">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+		<!-- ハンバーガーメニュー -->
+		<div id="content">
+				<!-- 
+				ハンバーガーメニュー
+				文字を中央寄せ
+				メニューの文字色 #f5f5f5
+				font-size: 24px
+				
+				jQuery
+				ページ内リンク
+				 -->
+				 <!-- ロゴ画像挿入 -->
+				<!-- ロゴ画像 w:272 h:56 -->
+				<!-- 
+				<img src="images/logo.svg" alt="Word Cafe ,">
+			<p>
+				Word Cafe ,
+				
+			</p>
+				 -->
+			<nav class="nav">
+				<ul>
+					<li><a href="#top">HOME</a></li>
+					<li><a href="#news">NEWS</a></li>
+					<li><a href="#event">EVENT</a></li>
+					<li><a href="#menu">MENU</a></li>
+					<li><a href="#access">ACCESS</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</header>
+	
+	<main class="main" id="top">
+		<!-- メインビジュアル（縦書きテキスト） -->
+		<div class="mainvisual">
+			<div class="plaid">
+				<div class="vertical">
+					<p>
+							こぢんまりとしたイラストや絵画の展示会。書籍でも、そんな展示スペースがあるといいなと思いました。<br>
+							そして、秋葉原といったら、なんといってもメイドカフェ。<br>
+							そこで、文章に触れ、メイドさんのいるカフェで美味しい紅茶や食事を楽しめるお店を作りました。<br>
+							カフェも展示スペースも、一度にあまりたくさんの方は入れませんが、それがいいと思ってもらえる場所を作りたいと思っています。</p>
+				</div>
+			</div>
+		</div>
+		<!-- NEWS お知らせ -->
+		<section id="news" class="wrapper">
+			<h2 class="section-title">NEWS</h2>
+			<!-- 
+			1 箇条書き
+			1-1 下線で仕切り棒
+			
+			 -->
+			<dl>
+				<dt><time datetime="2022-10-29">2022.10.29</time> <span class="genre">カフェ</span></dt>
+				<dd><a href="news.html#news01">12月限定メニューのお知らせ</a></dd>
+				<dt><time datetime="2022-10-20">2022.10.20</time> <span class="genre">展示</span></dt>
+				<dd><a href="news.html#news02">短編小説集「ゆきんこものがたり」展示記念イベントを開催します<br>
+																				イベントの映像配信もあります</a></dd>
+				<dt><time datetime="2022-10-17">2022.10.17</time> <span class="genre">展示</span></dt>
+				<dd><a href="news.html#news03">短編小説集「ゆきんこものがたり」展示のお知らせ</a></dd>
+				<dt><time datetime="2022-10-5">2022.10.5</time> <span class="genre">カフェ</span></dt>
+				<dd><a href="news.html#news04">営業時間短縮日のお知らせ</a></dd>
+				<dt><time datetime="2022-9-28">2022.9.28</time> <span class="genre">お休み</span></dt>
+				<dd><a href="news.html#news05">10月の休業日のお知らせ</a></dd>
+			</dl>
+			<div class="and-more">
+				<a href="news.html">and more</a>
+			</div>
+		</section>
+		<!-- 書籍展示イベント -->
+		<!-- 
+			2 		イベント画像挿入
+			2−1	画像とテキストの横並び（flex）
+			2−2	テキスト左揃え
+			2−3	角を丸くする
+			2−4	背景色を少し明るい黒色にする
+			
+			 -->
+		<section id="event" class="wrapper">
+			<h2 class="section-title">EVENT</h2>
+			
+			<div class="event-box open-event">
+				<!-- イベント画像 w:240 h:320 -->
+				<img src="images/event01.jpg" alt="event1">
+				<div class="text-area">
+					<h3 class="event-title">短編小説集「ゆきんこものがたり」</h3>
+					<dl class="auctor">
+						<dt>著者名 &#058;</dt>
+						<dd>小磯京子</dd>
+					</dl>
+					<p>雪が降った日だけ現れる、ゆきんこ。それも、誰にでも見えるわけではない。そんな不思議ないきものと出会う人々の一冬の日常を描く短編集。山もオチもない、ただ日々積もっていく雪のようなエピソード、合計10編を収録。</p>
+					<p>短編小説集「ゆきんこものがたり」の販売はもちろんのこと、原稿や資料の展示、既刊の販売も行います。</p>
+					<dl class="datetime-list">
+						<dt><span class="equality">会期</span>&#058;</dt>
+						<dd>
+							<time datetime="2022-10-24">2022年10月25日(火)</time>
+							 &#65374;
+							 <time datetime="2022-11-22">2022年11月20日(日)</time>
+						</dd>
+						<dt>開催時間 &#058;</dt>
+						<dd>
+							<time datetime="11:00">11 &#058; 00</time>
+							 &#65374;
+							 <time datetime="19:00">19 &#058; 00</time>
+						</dd>
+					</dl>
+					<dl class="datetime-list">
+						<dt>関連情報 &#058;</dt>
+						<dd>トークイベント</dd>
+						<dt><span class="equality">日付</span>&#058;</dt>
+						<dd>2022年10月29日(土)</dd>
+						<dt>開催時間 &#058;</dt>
+						<dd>
+							<time datetime="13:00">13 &#058; 00</time>
+								 &#65374;
+								 <time datetime="19:00">15 &#058; 00</time>
+						</dd>
+						<dt>開催場所 &#058;</dt>
+						<dd>Word Cafe, 展示スペース</dd>
+						<dt><span class="equality">定員</span>&#058;</dt>
+						<dd>5名</dd>
+						<dt>映像配信 &#058;</dt>
+						<dd><a href="#">YouTube</a></dd>
+						<dt>参加申込 &#058;</dt>
+						<dd><a href="#">○○</a>のサイトからお願いします。</dd>
+						<dt>参加費 &#058;</dt
+						<dd>1,000円(Ward Cafe,)、 500円(映像配信) </dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="and-more">
+				<a href="past-events.html">過去のイベント一覧</a>
+			</div>
+		</section>
+		
+		<!-- MENU -->
+		<!-- 
+			3 		メニュー画像挿入
+			3−1	画像とテキストの横並び（flex）
+			3−2	テキスト左揃え
+			3−3	フード、ドリンク、デザート、その他の仕切り線追加
+			3−4	メニュー名　価格の間に横線追加（画面幅によって線の幅を可変）
+			
+			 -->
+		<section id="menu" class="wrapper">
+			<h2 class="section-title">MENU</h2>
+			
+			<ul class="menu-category">
+				<li>
+					<div class="menu-category-title">
+						<!-- メニュー画像 w:136 h:136 -->
+						<img src="images/omelette-rice.png" alt="オムライスの写真">
+						<h3>
+						<span class="eng">Food</span>
+						<span class="ja">お食事</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">オムライス</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;1,100</dd>
+						<dt>
+							<span class="menu-title">カレーライス</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;880</dd>
+						<dt>
+							<span class="menu-title">ハヤシライス</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;1100</dd>
+					</dl>
+				</li>
+				<li class="drink">
+					<div class="menu-category-title">
+						<img src="images/coffee.png" alt="コーヒーの写真">
+						<h3>
+						<span class="eng">Drink</span>
+						<span class="ja">お飲み物</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">コーヒー</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;660</dd>
+						<dt>
+							<span class="menu-title">カプチーノ</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;770</dd>
+						<dt>
+							<span class="menu-title">ティー</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;550</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="menu-category-title">
+						<img src="images/milk-crepe.png" alt="ケーキの写真">
+						<h3>
+						<span class="eng">Dessert</span>
+						<span class="ja">お菓子</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">ミルクレープ</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;770</dd>
+						<dt>
+							<span class="menu-title">チーズケーキ</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;770</dd>
+						<dt>
+							<span class="menu-title">ショートケーキ</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;880</dd>
+						<dt>
+							<span class="menu-title">モンブラン</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;850</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="menu-category-title">
+						<img src="images/photo-camera.png" alt="チェキの写真">
+						<h3>
+						<span class="eng">Other</span>
+						<span class="ja">その他</span>
+						</h3>
+					</div>
+					<dl>
+						<dt>
+							<span class="menu-title">ブックマーカー</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;550</dd>
+						<dt>
+							<span class="menu-title">ブックカバー</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;770</dd>
+						<dt>
+							<span class="menu-title">メイドさんとのチェキ</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;1100</dd>
+						<dt class=>
+							<span class="menu-title">メイドさんのブロマイド</span>
+							<span class="menu-line"></span>
+						</dt>
+						<dd>&yen;900</dd>
+					</dl>
+				</li>
+			</ul>
+		</section>
+		<!-- ACCESS  地図 店舗情報 -->
+		<!-- 
+			5 		地図画像挿入
+			5−1	地図画像とテキストの横並び（flex）
+			5−2	テキスト左揃え
+			5−3	店名・住所・電話番号の行間を開ける
+			5−4	電話番号・営業時間・定休日の文字を均等割付け
+			
+			 -->
+	</main>
+	<footer class="footer">
+		<section id="access">
+			<h2 class="section-title">ACCESS</h2>
+			
+			<div class="content-area wrapper">
+				<!-- イベント画像 w:240 h:240 -->
+				
+				<div class="sns-area">
+				<h3>Twitter</h3>
+				<!-- 
+					<a href="https://twitter.com/intent/tweet?button_hashtag=fukami_re&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #fukami_re</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				
+			 -->
+					<a class="twitter-timeline" data-theme="dark" data-lang="ja" data-height="320" href="https://twitter.com/fukami_re?ref_src=twsrc%5Etfw">Tweets by fukami_re</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+				</div>
+				
+				<div class="map">
+					<img src="images/map.jpg" alt="Word Cafe , までの地図">
+				</div>
+				<div class="text-area">
+					<ul>
+						<li class="store-name">Word Cafe ,</li>
+						<li>&#12306;XXX-XXXX</li>
+						<li>東京都千代田区XXXXXXXX</li>
+						<li>XXXXXビル3F</li>
+					</ul>
+					<dl>
+						<dt>電話番号</dt>
+						<dd>&#058; XX-XXXX-XXXX</dd>
+						<dt>営業時間</dt>
+						<dd>
+							&#058; 
+							<time datetime="11:00">11 &#058; 00</time>
+							 &#65374;
+							 <time datetime="21:00">21 &#058; 00</time>
+						</dd>
+						<dt class="day-off">定休日</dt>
+						<dd>&#058; 不定休</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+		<p class="copyright"><span class="copy">&copy;</span> Word Cafe ,</p>
+	</footer>
+</body>
+</html>
